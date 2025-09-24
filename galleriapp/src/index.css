@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    background-color: midnightblue;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+
+    color:darkcyan;
+    background-color: darkslategrey;  
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 80vh;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+
+    color:darkcyan;
+    background-color: darkslategrey;
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.scoreCard {
+  border-radius: 10px;
+  box-shadow:  1px 1px 3px rgba(0,0,0,0.3);
+  flex-direction: column-reverse;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: cornsilk;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+
+  transition: all 0.3s;
+}
+
+.gallery img{
+    width: 260px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    transition: all 1s;
+}
+
+.scoreCard:hover {
+  transform: scale(1.05);
+  box-shadow:  5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.stars{
+  /*width: 100%;
+  margin: 10px;*/
+  text-align: center;
+  cursor: pointer;
+}
+
+.message{
+  margin-bottom: 10px;
+}
+
+.star{
+  font-size: 24px;
+
+  transition: all 0.2s;
+}
+
+.active{
+  font-size: 24px;
+  color: gold;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.active:hover{
+  color: yellow;
+  transform: scale(1.05);
+}
+
+.star:hover{
+  color: yellow;
+  transform: scale(1.05);
+}
