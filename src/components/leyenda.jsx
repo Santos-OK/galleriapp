@@ -3,7 +3,7 @@ import React from 'react'
  function Leyenda() {
   return (
     <footer>
-            <h2>El pasado es imborrable y el futuro impredecible... Entonces ¯\_(ツ)_/¯</h2>
+            <h2>Cuando creas en la magia, serás capaz de verla</h2>
     </footer>
   )
 }

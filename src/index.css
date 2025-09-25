@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: midnightblue;
+    background-color: #18063A;
 }
 
 .title{
@@ -10,7 +10,7 @@ body{
     height:10vh;
 
     color:darkcyan;
-    background-color: darkslategrey;  
+    background: linear-gradient(180deg, #675091, #2D1657);  
     position: sticky;
     top:0;
     z-index: 10;
@@ -36,7 +36,7 @@ footer{
     height:10vh;
 
     color:darkcyan;
-    background-color: darkslategrey;
+    background: linear-gradient(180deg, #2D1657, #675091); 
     position: sticky;
     top:0;
     z-index: 10;
@@ -76,8 +76,6 @@ footer{
 }
 
 .stars{
-  /*width: 100%;
-  margin: 10px;*/
   text-align: center;
   cursor: pointer;
 }
@@ -109,3 +107,84 @@ footer{
   color: yellow;
   transform: scale(1.05);
 }
+
+.sendSelection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+}
+
+.pageButton {
+  background: linear-gradient(135deg, #2D1657, #675091); 
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px; 
+  cursor: pointer;
+  transition: all 1s ease; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pageButton:hover {
+  background: linear-gradient(135deg, #675091, #8C7AAE); 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pageButton:active {
+  transform: scale(0.96); 
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ESTILOS DEL MODAL */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
